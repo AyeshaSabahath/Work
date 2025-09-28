@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Heading Tags-->
+    <h1>Hello, World!</h1>
+    <h2>My First Project</h2> 
+    <h3>Subheading</h3> 
+    <h4>Details</h4> 
+    <h5>Additional Information</h5>  
+    <h6>Conclusion</h6>
+
+    <!--Paragraph Tag-->
+    <p>This is a simple HTML document.</p>  
+
+    <!--Anchor tag-->
+    <!--Absolute path-->
+    <a href="https://www.example.com">Link</a>
+    <br>
+    <!--Open link in new tab-->
+    <a href="https://www.example.com" target="_main"></a> 
+    <br>
+    <!--Image inside Anchor tag-->
+    <a href="https://www.example.com" target="_main"><img src="image.jpg" alt="Link"></a>
+    <br>
+    <!--Relative path-->
+    <a href="page.html">Link</a>
+
+    <!--Image Tag is also 2 types same as Anchor Tag-->
+    <img src="image.jpg" alt="Description">
+    <!--Break Tag-->
+    <br>
+    <img src="https://www.example.com/image.jpg" alt="Description">
+    <br>
+
+    <!--Bold Tag-->
+    <b>Bold Text</b>
+    <br>
+    <!--Italic Tag-->
+    <i>Italic Text</i>
+    <br>
+    <!--Underline Tag-->
+    <u>Underline Text</u>
+    <br>
+
+    <!--Big Tag-->
+    <big>Big Text</big>
+    <br>
+    <!--Small Tag-->
+    <small>Small Text</small>
+    <br>
+
+    <!--Horizontal Rule Tag-->
+    <hr>
+
+    <!--Subscript Tag-->
+    <sub>Subscript Text</sub>
+    <br>
+    <p>H<sub>2</sub>O</p>
+
+    <!--Superscript Tag-->
+    <sup>Superscript Text</sup>
+    <br>
+    <p>E=mc<sup>2</sup></p>
+    <hr>
+
+    <!--Pre Tag-->
+    <pre>
+    This is a preformatted text.
+    It preserves whitespace and line breaks.
+    </pre>
+    <hr>
+
+    <!--Semantic Tags are easily recognizable HTML tags that convey meaning about the content within them. Examples include:-->
+    <header>
+        <h1>Header Title</h1>
+    </header>
+
+    <main>
+        <p>This is the main content area.</p>
+
+        <section>
+        <h2>Section Title</h2>
+        <p>This is a section.</p>
+        </section>
+
+        <article>
+        <h2>Article Title</h2>
+        <p>This is an article.</p>
+        </article>
+
+        <aside>
+        <h2>Aside Title</h2>    
+        <p>This is an aside/ad.</p>
+        </aside>
+
+    </main>
+
+    <main>
+        <!--Unordered List-->
+        <ul>
+            <li>Item 1</li>
+            <ul>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+            </ul>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <!--Ordered List-->
+        <ol>
+            <li>First</li>
+            <ol>
+                <li>Subfirst</li>
+                <li>Subsecond</li>
+            </ol>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>Footer Information</p>
+    </footer>
+    <hr>
+
+    <!--Non-semantic elements-->
+    <!--Div Tag holds a block of content-->
+    <div>
+        <p>This is a non-semantic element.</p>
+    </div>
+
+    <!--Span Tag holds inline content-->
+    <p>This is a <span>non-semantic</span> element.</p>
+    <hr>
+
+    <!--Table Tag holds tabular data-->
+    <table>
+        <!--Table Head-->
+        <thead>
+        <!--Heading of the Table-->
+        <caption>Sample Table</caption>
+        <!--Table Row(tr) Table Header(th)-->
+        <tr>
+            <th colspan="2">INFORMATION </th>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        </thead>
+        <!--Table Body-->
+        <tbody>
+        <!--Table Data(td)-->
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!--Form Tag-->
+    <form action="/submit" method="post">
+        <!--Label Tag-->
+        <label for="name">Name:</label>
+        <!--Input Tag-->
+        <input type="text" placeholder="Enter your name" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your email" id="email" name="email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter your password" id="password" name="password">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label>
+        <br>
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br>
+        <label for="country">Country:</label>
+        <!--Dropdown Tag-->
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+        </select>
+        <br>
+        <!--Textarea Tag-->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!--IFrame Tag shows other webpage within a webpage-->
+    <iframe src="https://www.example.com" width="600" height="400" title="Iframe Example"></iframe>
+    <hr>
+
+    <!--Video Tag shows video content-->
+    <video width="600" height="400" controls loop autoplay muted>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+</body>
+</html>
