@@ -102,7 +102,7 @@
         <h2>Aside Title</h2>    
         <p>This is an aside/ad.</p>
         </aside>
-
+        <hr>
     </main>
 
     <main>
@@ -127,7 +127,7 @@
             <li>Third</li>
         </ol>
     </main>
-
+    <hr>
     <footer>
         <p>Footer Information</p>
     </footer>
@@ -136,11 +136,11 @@
     <!--Non-semantic elements-->
     <!--Div Tag holds a block of content-->
     <div>
-        <p>This is a non-semantic element.</p>
+        <p>This is a non-semantic element.That is a div</p>
     </div>
 
     <!--Span Tag holds inline content-->
-    <p>This is a <span>non-semantic</span> element.</p>
+    <p>This is a <span>non-semantic</span> element.That<span> is a span.</span></p>
     <hr>
 
     <!--Table Tag holds tabular data-->
@@ -165,6 +165,12 @@
             <td>Data 3</td>
             <td>Data 4</td>
         </tr>
+        <tr>
+            <td>Data 5</td>
+            <td>Data 6</td>
+            <td>Data 7</td>
+            <td>Data 8</td>
+        </tr>
         </tbody>
     </table>
     <hr>
@@ -176,11 +182,14 @@
         <!--Input Tag-->
         <input type="text" placeholder="Enter your name" id="name" name="name">
         <br>
+        <br>
         <label for="email">Email:</label>
         <input type="email" placeholder="Enter your email" id="email" name="email">
         <br>
+        <br>
         <label for="password">Password:</label>
         <input type="password" placeholder="Enter your password" id="password" name="password">
+        <br>
         <br>
         <label for="gender">Gender:</label>
         <input type="radio" id="gender-male" name="gender" value="male">
@@ -188,9 +197,14 @@
         <input type="radio" id="gender-female" name="gender" value="female">
         <label for="gender-female">Female</label>
         <br>
+        <br>
         <label for="subscribe">Subscribe:</label>
         <input type="checkbox" id="subscribe" name="subscribe">
         <label for="subscribe">Subscribe to newsletter</label>
+        <br>
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">Agree to terms and conditions</label>
+        <br>
         <br>
         <label for="country">Country:</label>
         <!--Dropdown Tag-->
@@ -200,10 +214,13 @@
             <option value="india">India</option>
         </select>
         <br>
+        <br>
         <!--Textarea Tag-->
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
         <br>
+        <br>
+        <!--Submit Button-->
         <input type="submit" value="Submit">
     </form>
     <hr>
